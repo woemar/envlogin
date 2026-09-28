@@ -1,0 +1,25 @@
+{
+  "name": "woemar/envlogin",
+  "type": "typo3-cms-extension",
+  "description": "Prefills TYPO3 backend login credentials from environment variables.",
+  "version": "13.0.0",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "typo3/cms-backend": "^13.4 || ^14.3",
+    "typo3/cms-core": "^13.4 || ^14.3"
+  },
+  "support": {
+    "issues": "https://github.com/woemar/envlogin/issues",
+    "source": "https://github.com/woemar/envlogin"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "envlogin"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Woemar\\Envlogin\\": "Classes/"
+    }
+  }
+}
