@@ -3,12 +3,17 @@
 $EM_CONF[$_EXTKEY] = [
     'title' => 'envlogin',
     'description' => 'Prefill backend login with credentials from .env variables',
-    'category' => 'misc',
+    'category' => 'be',
     'constraints' => [
         'depends' => [
-            'typo3' => '13.4.0-13.4.99'
+            'php' => '8.2.0-8.5.99',
+            'typo3' => '13.4.1-14.3.99',
+            'backend' => '13.4.1-14.3.99',
+            'extbase' => '13.4.1-14.3.99',
         ],
         'conflicts' => [
+        ],
+        'suggests' => [
         ],
     ],
     'autoload' => [
@@ -16,8 +21,8 @@ $EM_CONF[$_EXTKEY] = [
             'Woemar\\Envlogin\\' => 'Classes'
         ],
     ],
-    'state' => 'alpha',
-    'author' => 'woemar',
-    'author_company' => 'woemar',
-    'version' => '0.0.1',
+    'state' => 'stable',
+    'author' => 'Marc Wöhlken',
+    'author_company' => '',
+    'version' => '13.0.0',
 ];
